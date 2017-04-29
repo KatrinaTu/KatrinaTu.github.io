@@ -71,9 +71,6 @@ margin: auto;
 	width: 200px;
 	position: absolute;
 	top: 20px;
-	
-	background-image: url(../images/logo.png);
-	background-repeat: no-repeat;
 }
 
 .fb{
@@ -82,8 +79,6 @@ margin: auto;
 	position: absolute;
 	right: 20px;
 	top: 30px;
-	background-image: url(../images/dot_facebook.png);
-	background-repeat: no-repeat;
 }
 
 .twt{
@@ -129,10 +124,9 @@ ul li{
 	}
 
 	.logo{
-		background-image: url(../images/logo.png);
-		background-repeat: no-repeat;
+		display: block;
 		position: relative;
-		margin: 0 auto;
+		margin: auto;
 	}
 
 	.fb{
@@ -144,7 +138,7 @@ ul li{
 	}
 	.lable {
 		float: none;
-		margin:10px auto;
+		margin:30px auto;
 		height: 200px;
 	}
 	/*找很久的bug!!!!!!!*/
@@ -174,9 +168,9 @@ ul li{
 	}
 
 	.logo{
-		background-image: url(../images/logo.png);
-		background-repeat: no-repeat;
-		margin: 0 auto;
+		display: block;
+		position: relative;
+		margin: auto;
 	}
 
 	.fb{
@@ -188,7 +182,7 @@ ul li{
 	}
 	.lable {
 		float: none;
-		margin:10px auto;
+		margin:40px auto;
 		height: 200px;
 	}
 	/*找很久的bug!!!!!!!*/
@@ -218,9 +212,9 @@ ul li{
 	}
 
 	.logo{
-		background-image: url(../images/logo.png);
-		background-repeat: no-repeat;
-		margin: 0 auto;
+		display: block;
+		position: relative;
+		margin: auto;
 	}
 
 	.fb{
@@ -232,7 +226,7 @@ ul li{
 	}
 	.lable {
 		float: none;
-		margin:10px auto;
+		margin:40px auto;
 		height: 200px;
 	}
 	/*找很久的bug!!!!!!!*/
@@ -472,6 +466,10 @@ ul li{
 		margin: 0 auto;
 		width: auto;
 	}
+	.read_more{
+		display: block;
+		margin: auto;
+	}
 	.content2{
 		height: auto;
 	}
@@ -523,6 +521,16 @@ ul li{
 }
 
 @media (max-width: 414px){
+	.p1{
+		float: none;
+		height: auto;
+		margin: 0 auto;
+		width: auto;
+	}
+	.read_more{
+		text-align: center;
+		margin: auto;
+	}
 	.content2{
 		height: auto;
 	}
@@ -570,6 +578,10 @@ ul li{
 	}
 }
 @media (max-width: 320px){
+	.read_more{
+		display: block;
+		margin: auto;
+	}
 	.content2{
 		height: auto;
 	}
