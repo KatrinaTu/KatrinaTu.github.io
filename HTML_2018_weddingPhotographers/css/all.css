@@ -1,0 +1,621 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Brush+Script|Oxygen|Poiret+One|Varela+Round|Raleway');
+h1{
+	font-size: 50px;
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	font-family: 'Nanum Brush Script', cursive;
+	color: #935d5d; 
+}
+
+h2{
+	font-size: 30px;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	color: #e1aebb;
+}
+p{
+	font-family: 'Raleway', sans-serif;
+}
+
+.all{
+	height: auto;
+}
+
+.wrap{
+	width: 1024px;
+	margin: auto;
+}
+
+
+/*.menu{
+	
+	text-align: center; 	
+  	
+  	font-size: 20px;
+  	font-family: 'Varela Round', sans-serif;
+}
+.menu ul{
+	text-align: center;
+}
+.menu li{
+	
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px; 
+	padding-left: 20px;
+	text-decoration: none;
+	float: left;
+	left: 30%;
+	position: relative;
+	list-style-type: none;
+
+}
+.menu li a{
+	text-decoration: none;
+	color: #b87575;
+	display: block;
+	
+}
+.menu li a:hover{
+	color: 	#dbbdbd;
+}
+.navFixed {
+  z-index: 10;          
+  position: fixed;      
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  min-width: 100%;
+  opacity: 0.94;
+  transition: opacity .5s ease-out;   
+}*/
+.outer{
+	text-align: center;
+	
+}
+.nav{
+	display: inline-block;
+  text-align: center;
+ 
+	
+	display: block;
+	background-color: #eadada;
+}
+.nav ul{
+	display: inline-block;
+	text-align: center;
+	display: table;
+	background-color: #eadada;
+}
+.nav ul li{
+	display: inline-block;
+	width:200px;
+	float: left;
+	margin: 20px;
+	background-color: #eadada;
+	position: relative;
+	
+	font-family: 'Raleway';
+}
+.nav ul li:hover{
+	color: 		#c88484;
+}
+
+
+.logo{
+	width: 1024px;
+	height: 683px;
+}
+
+@media (max-width: 768px){
+	.wrap{
+		height: auto;
+		width: 100%;
+	}
+
+	.header{
+		height: auto;
+		width: 100%;	
+		margin: 0 auto;
+
+	}
+
+	h1{
+		font-size: 40px;
+	}
+	.logo{
+		margin : auto;
+		max-width: 100%;
+		height: auto;
+		display: block;
+		text-align: center;
+	}
+	.nav ul li{
+
+	display: block;
+	float:left;
+	margin: 20px;
+	background-color: #eadada;
+	position: relative;
+	/*left: 65%;*/
+	font-family: 'Raleway';
+}
+
+
+}
+
+@media (max-width: 414px){
+	.wrap{
+		height: auto;
+		width: 100%;
+	}
+
+	.header{
+		height: auto;
+		width: 100%;	
+		margin: 0 auto;
+
+	}
+	h1{
+		font-size: 35px;
+	}
+	.logo{
+		margin : auto;
+		max-width: 100%;
+		height: auto;
+		display: block;
+		text-align: center;
+	}
+	.nav ul li{
+	display: block;
+	float:left;
+	margin: 20px;
+	background-color: #eadada;
+	position: relative;
+	/*left: 20%;*/
+	font-family: 'Raleway';
+	}
+}
+@media (max-width: 375px) {
+	.wrap{
+		height: auto;
+		width: 100%;
+	}
+
+	.header{
+		height: auto;
+		width: 100%;	
+		margin: 0 auto;
+
+	}
+	h1{
+		font-size: 30px;
+	}
+	.logo{
+		margin : auto;
+		max-width: 100%;
+		height: auto;
+		display: block;
+		text-align: center;
+	}
+	.nav ul li{
+	display: block;
+
+	float:none;
+	font-size: 40px;
+	margin: 20px;
+	background-color: #eadada;
+	position: relative;
+	left: 20%;
+	font-family: 'Raleway';
+	}
+}
+
+
+
+
+.team_intro{
+	font-size: 20px;
+	font-family: 'Varela Round', sans-serif;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
+.container {
+  border: 2px solid #b87575;
+  
+  
+  padding: 16px;
+  margin: 16px 0;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .container {
+      text-align: center;
+  }
+  .container img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
+
+.gallery_findphoto{
+	background: url('https://static.pexels.com/photos/256737/pexels-photo-256737.jpeg') center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 300px;
+	margin-bottom: 150px;
+}
+.container_btn{
+	width: 1024px;
+	height: 200px;
+	margin-top: 100px;
+
+}
+
+.gallery_button{
+	font-size: 30px;
+	text-align: center;
+	text-decoration: none;
+	border: solid 	#b87575;
+	font-family: 'Varela Round', sans-serif;
+	padding: 10px 20px;
+	border-radius: 9px;
+	color: #b87575;
+	
+	margin: 0 auto; 
+	display: table; 
+	position: relative; 
+	float: left; 
+	top: 50%; 
+	left: 38%;
+	
+}
+
+.gallery_button:hover{
+	border-color: 	#dbbdbd;
+	color: 	#dbbdbd;
+}
+.awards_findteam{
+	background: url('http://www.publicdomainpictures.net/pictures/70000/velka/wedding-photographer.jpg') center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 300px;
+	margin-top: 100px;
+	margin-bottom: 30px;
+}
+.container_btn_photographers{
+	width: 1024px;
+	height: 200px;
+	margin-top: 100px;
+
+}
+.photographers_button{
+	font-size: 30px;
+	text-align: center;
+	text-decoration: none;
+	border: solid 	#b87575;
+	font-family: 'Varela Round', sans-serif;
+	padding: 10px 20px;
+	border-radius: 9px;
+	color: #b87575;
+	
+	margin: 0 auto; 
+	display: table; 
+	position: relative; 
+	float: left; 
+	top: 50%; 
+	left: 33%;
+}
+.photographers_button:hover{
+	border-color: 	#dbbdbd;
+	color: 	#dbbdbd;
+}
+@media (max-width: 768px){
+	h2{
+		font-size: 27px;
+	}
+	p{
+		font-size: 18px;
+	}
+	.gallery_findphoto{
+		background: url('https://static.pexels.com/photos/256737/pexels-photo-256737.jpeg') center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		height: 300px;
+		max-width: 100%;
+		margin: auto;
+		display:block;
+		text-align: center;
+	}
+
+	.container_btn{
+		width: auto;
+		height: 180px;	
+	}
+	.gallery_button{
+		font-size: 25px;
+		margin: 0 auto; 
+		display: table; 
+		position: relative; 
+		float: left; 
+		top: 58%; 
+		left: 33%;
+	}
+	.photographers_button{
+		font-size: 25px;
+		margin: 0 auto; 
+		display: table; 
+		position: relative; 
+		float: left; 
+		top: 62%; 
+		left: 27%;
+		
+	}
+
+	.photographer_list{
+		width: 100%;
+	}
+
+}
+@media (max-width: 414px){
+	.gallery_findphoto{
+		background: url('https://static.pexels.com/photos/256737/pexels-photo-256737.jpeg') center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		height: 200px;
+		max-width: 100%;
+	}
+	.awards_findteam{
+		background: url('http://www.publicdomainpictures.net/pictures/70000/velka/wedding-photographer.jpg') center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		height: 200px;
+		max-width: 100%;
+
+	}
+	.container_btn{
+		width: auto;
+		height: 180px;	
+	}
+	.gallery_button{
+		font-size: 18px;
+		margin: 0 auto; 
+		display: table; 
+		position: relative; 
+		float: left; 
+		top: 46%; 
+		left: 30%;
+	}
+	.photographers_button{
+		font-size: 18px;
+		margin: 0 auto; 
+		display: table; 
+		position: relative; 
+		float: left; 
+		top: 50%; 
+		left: 20%;
+		
+	}
+
+	.photographer_list{
+		width: 100%;
+	}
+	
+}
+/*********photographers page RWD******/
+* {
+    box-sizing: border-box;
+}
+@media only screen and  (max-width: 760px){
+	td, tr { display: block; }
+	thead tr {
+  position: absolute;
+
+  top: -9999px;
+
+  left: -9999px;
+
+}
+tr { border: 1px solid #ddd; }
+tr + tr { margin-top: 1.5em; }
+td {
+	border: none;
+
+  border-bottom: 1px solid ;
+
+  position: relative;
+
+  padding-left: 50%;
+
+ 
+
+  text-align: left;
+
+
+}
+td:before {
+
+  content: attr(data-label);
+
+  display: inline-block;
+
+  line-height: 1.5;
+
+  margin-left: -100%;
+
+  width: 100%;
+
+  white-space: nowrap;
+
+}
+
+}
+/*************************************/
+/************Gallery page***************/
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    text-align: center;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    text-align: center;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+@media screen and (max-width: 768px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 414px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+.footer{
+	
+	text-align: center;
+	padding-bottom: 30px;
+	
+}
+.sns {
+	display: inline-block;
+  	text-align: center;
+}
+.sns ul{
+	text-align: center;
+}
+.sns ul li{
+	float: left;
+	margin: 10px 5px;
+}
+@media(max-width: 414px){
+	.sns {
+		display: inline-block;
+	  	position: relative;
+	  	text-align: center;
+	}
+
+}
+
+
+.fb{
+	height: 35px;
+	width: 35px;
+	background-image: url(../img/facebook.png);
+	background-repeat: no-repeat;
+	
+}
+
+.ins{
+	height: 35px;
+	width: 35px;
+	
+	background-image: url(../img/instagram.png);
+	background-repeat: no-repeat;
+}
+.twt{
+	height: 35px;
+	width: 35px;
+
+	background-image: url(../img/twitter.png);
+	background-repeat: no-repeat;
+}
+.pin{
+	height: 35px;
+	width: 35px;
+	
+	background-image: url(../img/pinterest.png);
+	background-repeat: no-repeat;
+}
+
+
